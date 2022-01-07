@@ -1,0 +1,27 @@
+{
+  "name": "tribal-wars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manueltarouca/tribal-wars.js.git"
+  },
+  "keywords": [],
+  "author": "Manuel Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manueltarouca/tribal-wars.js/issues"
+  },
+  "homepage": "https://github.com/manueltarouca/tribal-wars.js#readme",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
