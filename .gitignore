@@ -1,3 +1,5 @@
 node_modules/
 dist/
-tribal-wars-*.tgz
+releases/
+package-lock.json
+tribal-wars.js-*.tgz
