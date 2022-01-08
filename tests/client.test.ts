@@ -1,5 +1,4 @@
-import { TribalWarsClient } from "../src/client";
-
+import { TribalWarsClient } from "../src";
 
 test('test client', async () => {
   const client = new TribalWarsClient({
@@ -8,6 +7,6 @@ test('test client', async () => {
     countryCode: 'pt',
   });
   const players = await client.getPlayers();
-  console.log(players)
+  console.log(players.find(p => p.name === 'matm'));
   expect(players).toBeDefined();
 });
