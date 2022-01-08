@@ -1,17 +1,29 @@
 {
-  "name": "tribal-wars",
-  "version": "1.0.0",
+  "name": "tribal-wars-js",
+  "version": "1.0.7",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "test": "jest"
+    "build": "tsc",
+    "prepare": "rimraf dist && npm run build",
+    "test": "jest --testTimeout=30000"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/manueltarouca/tribal-wars.js.git"
   },
-  "keywords": [],
+  "keywords": [
+    "tribal-wars",
+    "tribal-wars-api",
+    "tribal-world-data",
+    "tw",
+    "tw-api",
+    "tw-data"
+  ],
   "author": "Manuel Martins",
   "license": "ISC",
   "bugs": {
@@ -27,5 +39,8 @@
   },
   "dependencies": {
     "axios": "^0.24.0"
+  },
+  "engines": {
+    "node": ">=14.x"
   }
 }
